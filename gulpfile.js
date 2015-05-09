@@ -10,7 +10,7 @@ var gulp = require('gulp'),
 */
 gulp.task('concat-files', function(){
 	gulp.src('source/*.js')
-		.pipe(concat('lab31.min.js'))
+		.pipe(concat('*.min.js'))
 		.pipe(uglify())
 		.pipe(gulp.dest('build/'))
 }); 
